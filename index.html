@@ -35,43 +35,46 @@
 </head>
 
 <body>
-<header>
-  <h1 id="name">JEFFREY NERONA</h1>
-  <p id="about">Web Developer | Physics Geek | Cyborg</p>
-</header>
 <nav>
+  <div id="nav-logo"><h5>JEFFREY NERONA</h5></div>
   <ul class="nav">
     <li class="nav-item">
-      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#home">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link" href="#one">Link</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link2</a>
+      <a class="nav-link" href="#two">Link2</a>
     </li>
   </ul>
 </nav>
-<section>
+<header id="home">
+  <h1 id="name">JEFFREY NERONA</h1>
+  <p id="about">Web Developer | Physics Geek | Cyborg</p>
+</header>
+<section id="one">
   <p>Nothing here Yet!</p>
 </section>
-<section>
+<section id="two">
   <p>Still Nothing!</p>
 </section>
  <script type="text/javascript">
 
   $(document).ready(function() {
-    var h = $(window).height();
+    var h = window.innerHeight - $('nav').height();
     $(window).scroll(function () {
         //if you hard code, then use console
         //.log to determine when you want the 
         //nav bar to stick.  
       console.log($(window).scrollTop())
-      if ($(window).scrollTop() > h - $('nav').height()) {
+      if ($(window).scrollTop() > h ) {
         $('nav').addClass('navbar-fixed');
+        $('#nav-logo').addClass('show');
       }
-      if ($(window).scrollTop() < h + 1 - $('nav').height()) {
+      if ($(window).scrollTop() < h + 1 ) {
         $('nav').removeClass('navbar-fixed');
+        $('#nav-logo').removeClass('show');
       }
     });
   });
