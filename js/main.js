@@ -29,3 +29,16 @@ $(document).ready(function(){
       });
   });
 });
+
+$(function(){
+  // Bind the swipeleftHandler callback function to the swipe event on div.box
+  $( ".site-wrap" ).on( "swipeleft", swipeleftHandler );
+  $( ".site-wrap" ).on( "swiperight", swiperightHandler );
+  // Callback function references the event target and adds the 'swipeleft' class to it
+  function swipeleftHandler( event ){
+    document.getElementById('nav-trigger').checked = true;
+  }
+  function swiperightHandler( event ){
+    document.getElementById('nav-trigger').checked = false;
+  }
+});
