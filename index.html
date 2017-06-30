@@ -30,58 +30,41 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/tether.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  
 </head>
 
 <body>
-
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger" class="trigger"></label>
-<!-- NAVIGAATION START -->
-
-<nav>
-  <div id="nav-logo"><h5>JEFFREY NERONA</h5></div>
-  <ul class="nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#home">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#one">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#two">Link2</a>
-    </li>
-  </ul>
-</nav>
-
-<!-- NAVIGAATION END -->
-<!-- HEADER START -->
-<div class="site-wrap">
-
-<header id="home">
-  <h1 id="name">JEFFREY NERONA</h1>
-  <p id="about">Web Developer | Physics Geek | Cyborg</p>
-</header>
-<div class="clear"></div>
-<!-- HEADER END -->
-<!-- MAINT CONTENT START -->
-
-<section id="one">
-  <div class="container">
-    <p>Nothing here Yet!</p>
+<div class="loader-wrap">
+  <div class="loader">
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
   </div>
-</section>
-<div class="clear"></div>
-<section id="two">
-  <div class="container">
-    <p>Still Nothing!</p>
-  </div>
-</section>
-<div class="clear"></div>
 </div>
-<!-- MAINT CONTENT END -->
-
- <script src="js/main.js"></script>
+<div class="site-wrap">
+  <section id="home">
+    <header>
+      <h1 id="name">JEFFREY NERONA</h1>
+      <p id="about">Web Developer | Physics Geek | Cyborg</p>
+      <nav></nav>
+    </header>
+  </section>
+<div id="overlay"></div>
+<script src="js/cheet.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+setTimeout(
+  function() {
+    $(document).ready(function() {
+    $('.loader-wrap').addClass('hide');
+    $('.loader').addClass('remove');
+  });
+    }, 2000);
+  cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
+    alert('Send Nudes!');
+  });
+</script>
 </body>
 
 </html>
