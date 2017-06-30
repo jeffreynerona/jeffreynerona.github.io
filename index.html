@@ -62,7 +62,13 @@ setTimeout(
   });
     }, 2000);
   cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
-    alert('Send Nudes!');
+    $('#name').html('Send Nudes');
+    $('#name').addClass('enlarge');
+    setTimeout(
+      function() {
+        $('#name').html('Jefrey Nerona');
+        $('#name').removeClass('enlarge');
+    }, 1000);
   });
 </script>
 </body>

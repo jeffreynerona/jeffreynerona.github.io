@@ -70,6 +70,11 @@ h1,h2,h3,h4,h5,h6 {
   transition: visibility 0s 1s, opacity 1s linear;
 }
 
+.enlarge {
+  font-size: 5.5em !important;
+  transition: font-size 1s linear;
+}
+
 .remove {
   display: none !important;
 }
