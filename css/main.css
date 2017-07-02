@@ -112,7 +112,7 @@ header {
   display: none !important;
 }
 
-#about {
+.content {
   position: relative;
   display: block;
   bottom: 0;
