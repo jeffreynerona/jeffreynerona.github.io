@@ -114,7 +114,7 @@ header {
 
 .content {
   position: relative;
-  display: block;
+  display: none;
   bottom: 0;
   width: 80%;
   height: 70%;
