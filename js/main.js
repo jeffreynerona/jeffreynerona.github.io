@@ -4,7 +4,7 @@ setTimeout(
     $('.loader-wrap').addClass('hide');
     $('.loader').addClass('remove');
   });
-    }, 2000);
+    }, 1500);
   cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
     $('#name').html('Send Nudes');
     $('#name').addClass('enlarge');
