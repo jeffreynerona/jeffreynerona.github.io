@@ -1,5 +1,5 @@
 /* Jeffrey Nerona */
-@import url('https://fonts.googleapis.com/css?family=Lato:900|Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Source+Code+Pro');
 
 
 /* My CSS */
@@ -26,7 +26,7 @@ div {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Lato', monospace;
+  font-family: 'Raleway', sans-serif;
 }
 
 ul {
@@ -79,12 +79,13 @@ header {
 
 #name {
   color: #fff;
-  font-size: 2.5em;
+  font-size: 4em;
   text-align: center;
 }
 
 #titles {
   color: #5AE8FD;
+  font-size: 1em;
   text-align: center;
 }
 
@@ -128,9 +129,9 @@ header {
   display: block !important;
 }
 
-#profile-section {background: gray;}
-#portfolio-section {background: white;}
-#contact-section {background: black;}
+#profile-section {background: transparent;}
+#portfolio-section {background: transparent;}
+#contact-section {background: transparent;}
 
 
 /* LOADER START*/

@@ -21,16 +21,35 @@ cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
 $('#profile').click(function(){ expand('profile-section'); return false; });
 $('#portfolio').click(function(){ expand('portfolio-section'); return false; });
 $('#contact').click(function(){ expand('contact-section'); return false; });
-var active = 'a';
+var active = 'none';
 
 function expand(x) {
-  if(active != x) {
-    $("#"+active).animate({
-              height: 0,
-          }, 500).removeClass('expand');
-    active = x;
-    $('#'+x).addClass('expand').animate({
+  if(active=='none') {
+    $("#"+active).removeClass('expand');
+      $('#'+x).addClass('expand').animate({
               height: 500,
           }, 500);
+    active = x;
+  }
+  else if(active != x) {
+    $("#"+active).animate({
+              height: 0,
+          }, 500);
+    setTimeout(function(){
+      $("#"+active).removeClass('expand');
+      $('#'+x).addClass('expand').animate({
+              height: 500,
+          }, 500);
+    active = x;
+    },500);
+  }
+  else {
+    $("#"+active).animate({
+              height: 0,
+          }, 500).delay(500);
+    setTimeout(function(){
+      $("#"+x).removeClass('expand');
+    },500);
+    active='none';
   }
 }
