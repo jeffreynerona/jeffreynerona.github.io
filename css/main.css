@@ -45,13 +45,8 @@ ul li {
 }
 
 li a {
-  margin-right: 10px;
   color: #000;
   text-decoration: none;
-}
-
-li a:last-child {
-  margin-right: 0px;
 }
 
 .site-wrap {
@@ -117,8 +112,7 @@ header {
   display: none;
   bottom: 0;
   width: 80%;
-  height: 70%;
-  max-height: calc(50% + 100px);
+  height: 0px;
   background: black;
   z-index: 3;
   margin: auto;
@@ -127,7 +121,16 @@ header {
   border-radius: 10px;
   background: transparent;
   margin-bottom: 10px;
+  max-height: calc(50% + 100px) !important;
 }
+
+.expand {
+  display: block !important;
+}
+
+#profile-section {background: gray;}
+#portfolio-section {background: white;}
+#contact-section {background: black;}
 
 
 /* LOADER START*/
