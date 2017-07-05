@@ -3,9 +3,10 @@
 setTimeout(
   function() {
     $(document).ready(function() {
-    window.scrollTo(0,20);
+    
     $('.loader-wrap').addClass('hide');
     $('.loader').addClass('remove');
+    window.scrollTo(0,20);
   });
 }, 1500);
 
