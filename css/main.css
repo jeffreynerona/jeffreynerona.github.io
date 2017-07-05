@@ -50,10 +50,13 @@ li a {
 }
 
 .site-wrap {
+  background: #000;
+  /*
   background: url("../images/bg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  */
   height: 100%;
   width: 100%;
   display: table;
@@ -84,7 +87,7 @@ header {
 }
 
 #titles {
-  color: #5AE8FD;
+  color: #1abc9c;
   font-size: 1em;
   text-align: center;
 }
