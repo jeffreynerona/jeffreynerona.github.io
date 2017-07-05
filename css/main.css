@@ -13,7 +13,7 @@ html,body {
 
 body {
   background-color: #000;
-  color: black;
+  color: #fff;
   font-family: 'Source Code Pro', monospace;
   font-size: 14px;
   overflow-x: hidden;
@@ -116,16 +116,21 @@ header {
   display: none;
   bottom: 0;
   width: 80%;
+  max-width: 800px;
   height: 0px;
   background: black;
   z-index: 3;
   margin: auto;
-  overflow: hidden;
-  border: 2px solid #000;
+  overflow: scroll;
+  overflow-x: hidden;
+  border: 2px solid gray;
   border-radius: 10px;
   background: transparent;
   margin-bottom: 10px;
-  max-height: calc(50% + 100px) !important;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 .expand {
