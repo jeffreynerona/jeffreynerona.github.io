@@ -24,6 +24,7 @@ $('#contact').click(function(){ expand('contact-section'); return false; });
 var active = 'none';
 
 function expand(x) {
+  window.scrollTo(0,1);
   if(active=='none') {
     $("#"+active).removeClass('expand');
       $('#'+x).addClass('expand').animate({
