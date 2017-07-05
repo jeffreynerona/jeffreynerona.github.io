@@ -1,9 +1,9 @@
-window.scrollTo(0,1);
+
 /*Loader*/
 setTimeout(
   function() {
     $(document).ready(function() {
-    window.scrollTo(0,1);
+    window.scrollTo(0,20);
     $('.loader-wrap').addClass('hide');
     $('.loader').addClass('remove');
   });
