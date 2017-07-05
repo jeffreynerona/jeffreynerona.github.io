@@ -6,7 +6,6 @@ setTimeout(
     
     $('.loader-wrap').addClass('hide');
     $('.loader').addClass('remove');
-    window.scrollTo(0,20);
   });
 }, 1500);
 
