@@ -20,32 +20,50 @@ cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
   }, 1000);
 });
 
-$('#profile').click(function(){ expand('profile-section'); return false; });
-$('#portfolio').click(function(){ expand('portfolio-section'); return false; });
-$('#contact').click(function(){ expand('contact-section'); return false; });
+$('#profile').click(function(){
+  expand('profile-section');
+  return false; 
+});
+$('#portfolio').click(function(){
+  expand('portfolio-section');
+  return false;
+});
+$('#contact').click(function(){
+  expand('contact-section');
+  return false;
+});
 var active = 'none';
 
 function expand(x) {
+  var buttonLink = x.slice(0, x.length-8);
+  var ht = window.innerHeight - 152;
   if(active=='none') {
-    $("#"+active).removeClass('expand');
-      $('#'+x).addClass('expand').animate({
-              height: 400,
+    $('#'+buttonLink).addClass('bluize');
+    $('#'+x).addClass('expand').animate({
+              height: ht,
           }, 500);
     active = x;
   }
   else if(active != x) {
+    var toRemove = active.slice(0, active.length-8);
+    $('#'+buttonLink).addClass('bluize');
+    $('#'+toRemove).removeClass('bluize');
     $("#"+active).animate({
               height: 0,
           }, 500);
     setTimeout(function(){
       $("#"+active).removeClass('expand');
       $('#'+x).addClass('expand').animate({
-              height: 400,
+              height: ht,
           }, 500);
     active = x;
     },500);
+
   }
   else {
+    $('#contact').removeClass('bluize');
+    $('#profile').removeClass('bluize');
+    $('#portfolio').removeClass('bluize');
     $("#"+active).animate({
               height: 0,
           }, 500).delay(500);

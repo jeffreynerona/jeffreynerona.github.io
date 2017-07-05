@@ -23,6 +23,7 @@ body {
 div {
   box-sizing: border-box;
   display: block;
+  overflow: hidden;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -95,6 +96,10 @@ header {
   clear: both;
 }
 
+.bluize {
+  color: #1abc9c !important;
+}
+
 .hide {
   visibility: hidden;
   opacity: 0 !important;
@@ -113,19 +118,17 @@ header {
 .content {
   position: relative;
   display: none;
-  bottom: 0;
-  width: 80%;
+  width: 90%;
   max-width: 800px;
   height: 0px;
-  background: black;
   z-index: 3;
   margin: auto;
   overflow: scroll;
   overflow-x: hidden;
   border: 2px solid gray;
   border-radius: 10px;
-  background: transparent;
   margin-bottom: 10px;
+  padding: 10px;
 }
 
 ::-webkit-scrollbar { 
@@ -136,10 +139,18 @@ header {
   display: block !important;
 }
 
-#profile-section {background: transparent;}
-#portfolio-section {background: transparent;}
-#contact-section {background: transparent;}
+.portfolio-item {
+  width: 48%;
+  height: 200px;
+  background: #fff;
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 2%;
+}
 
+.portfolio-item:last-child {
+  margin-right: 0;
+}
 
 /* LOADER START*/
 .loader-wrap {
