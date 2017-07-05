@@ -53,4 +53,5 @@ function expand(x) {
     },500);
     active='none';
   }
+  window.scrollTo(0,1);
 }
