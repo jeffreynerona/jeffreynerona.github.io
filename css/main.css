@@ -164,7 +164,7 @@ header {
 /* LOADER START*/
 .loader-wrap {
   opacity: 1;
-  background: #1abc9c;
+  background: #000;
   display: table;
   position: absolute;
   height: 100%;
@@ -203,7 +203,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: #1abc9c;
   -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
           animation: sk-foldCubeAngle 2.4s infinite linear both;
   -webkit-transform-origin: 100% 100%;
