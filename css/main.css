@@ -30,24 +30,33 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Raleway', sans-serif;
 }
 
-ul {
-  list-style-type: none;
+.menu {
   margin: 0;
   padding: 0;
-  width: 188px;
+  width: 198px;
   display: block;
   margin: auto;
 
 }
 
-ul li {
-  width: 56px;
-  display: inline-block;
+a:-webkit-any-link {
+    color: #000;
+    cursor: auto;
+    text-decoration: underline;
 }
 
-li a {
+.menu-item {
+  width: 56px;
+  display: inline-block;
   color: #000;
   text-decoration: none;
+}
+
+.icon-text {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 11px;
 }
 
 .site-wrap {
