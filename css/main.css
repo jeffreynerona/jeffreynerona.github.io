@@ -14,7 +14,7 @@ html,body {
 body {
   background-color: #000;
   color: #fff;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   overflow-x: hidden;
   position: relative;
@@ -50,7 +50,6 @@ li a {
 }
 
 .site-wrap {
-  background: #000;
   /*
   background: url("../images/bg2.jpg");
   background-size: cover;

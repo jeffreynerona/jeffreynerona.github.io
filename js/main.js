@@ -3,6 +3,7 @@ window.scrollTo(0,1);
 setTimeout(
   function() {
     $(document).ready(function() {
+    window.scrollTo(0,1);
     $('.loader-wrap').addClass('hide');
     $('.loader').addClass('remove');
   });
@@ -25,7 +26,6 @@ $('#contact').click(function(){ expand('contact-section'); return false; });
 var active = 'none';
 
 function expand(x) {
-  window.scrollTo(0,1);
   if(active=='none') {
     $("#"+active).removeClass('expand');
       $('#'+x).addClass('expand').animate({
@@ -54,5 +54,4 @@ function expand(x) {
     },500);
     active='none';
   }
-  window.scrollTo(0,1);
 }
