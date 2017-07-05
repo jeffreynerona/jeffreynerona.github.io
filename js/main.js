@@ -29,7 +29,7 @@ function expand(x) {
   if(active=='none') {
     $("#"+active).removeClass('expand');
       $('#'+x).addClass('expand').animate({
-              height: 500,
+              height: 400,
           }, 500);
     active = x;
   }
@@ -40,7 +40,7 @@ function expand(x) {
     setTimeout(function(){
       $("#"+active).removeClass('expand');
       $('#'+x).addClass('expand').animate({
-              height: 500,
+              height: 400,
           }, 500);
     active = x;
     },500);
