@@ -36,7 +36,7 @@ var active = 'none';
 
 function expand(x) {
   var buttonLink = x.slice(0, x.length-8);
-  var ht = window.innerHeight - 152;
+  var ht = window.innerHeight - 172;
   if(active=='none') {
     $('#'+buttonLink).addClass('bluize');
     $('#'+x).addClass('expand').animate({

@@ -127,6 +127,7 @@ header {
 
 .content {
   position: relative;
+  background: rgba(0,0,0,0.6);
   display: none;
   width: 90%;
   max-width: 800px;
