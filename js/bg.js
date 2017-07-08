@@ -63,6 +63,45 @@ var mouseX = 0, mouseY = 0,
 
 				}
 
+				// custom
+				/*
+					var material2 = new THREE.SpriteCanvasMaterial( {
+					color: 0x4abdac,
+					program: function ( context ) {
+						context.beginPath();
+						context.arc( 0, 0, 0.5, 0, PI2, true );
+						context.fill();
+					}
+
+				} );
+
+					particle2 = new THREE.Sprite( material );
+					particle2.position.x = -52;
+					particle2.position.y = 150;
+					particle2.position.z = 85;					
+					particle2.scale.x = particle2.scale.y = 30;
+					scene.add( particle2 );
+					geometry.vertices.push( particle2.position );
+
+					particle3 = new THREE.Sprite( material );
+					particle3.position.x = -2;
+					particle3.position.y = 150;
+					particle3.position.z = 85;					
+					particle3.scale.x = particle3.scale.y = 30;
+					scene.add( particle3 );
+					geometry.vertices.push( particle3.position );
+
+					particle4 = new THREE.Sprite( material );
+					particle4.position.x = 48;
+					particle4.position.y = 150;
+					particle4.position.z = 85;					
+					particle4.scale.x = particle4.scale.y = 30;
+					scene.add( particle4 );
+					geometry.vertices.push( particle3.position );
+			*/
+				//end custom
+
+
 				// lines
 
 				var line = new THREE.Line( geometry, new THREE.LineBasicMaterial( { color: 0xffffff, opacity: 0.5 } ) );
@@ -140,7 +179,6 @@ var mouseX = 0, mouseY = 0,
 				camera.position.x += ( mouseX - camera.position.x ) * .05;
 				camera.position.y += ( - mouseY + 200 - camera.position.y ) * .05;
 				camera.lookAt( scene.position );
-
 				renderer.render( scene, camera );
 
 			}
