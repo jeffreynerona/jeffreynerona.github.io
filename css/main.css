@@ -167,7 +167,7 @@ header {
   margin-right: 0;
 }
 
-.fa::before {
+.fa-user::before, .fa-archive::before, .fa-envelope-open::before {
     color: #000;
 }
 
