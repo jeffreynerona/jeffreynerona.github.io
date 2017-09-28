@@ -3,6 +3,8 @@
 
 
 /* My CSS */
+
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   box-sizing: border-box;
@@ -62,6 +64,12 @@ a:-webkit-any-link {
   font-size: 11px;
 }
 
+.container {
+  padding: 40px;
+  max-width: 100%;
+  margin: auto;
+}
+
 .site-wrap {
   /*
   background: url("../images/bg2.jpg");
@@ -71,7 +79,9 @@ a:-webkit-any-link {
   */
   height: 100%;
   width: 100%;
+  max-width: 100%;
   display: table;
+  table-layout: fixed;
   position: absolute;
   z-index: 1;
   overflow: hidden;
@@ -134,7 +144,6 @@ header {
   margin: auto;
   overflow: scroll;
   overflow-x: hidden;
-  padding: 10px;
 }
 
 ::-webkit-scrollbar { 
@@ -170,17 +179,21 @@ header {
   vertical-align: none;
 }
 
-.portfolio-item {
-  width: 48%;
-  height: 200px;
-  background: #fff;
-  float: left;
-  margin-bottom: 10px;
-  margin-right: 2%;
+.portfolio-items {
+  display: block;
+  margin: auto;
+  width: 948px;
+  max-width: 100% !important;
 }
 
-.portfolio-item:last-child {
-  margin-right: 0;
+.portfolio-item {
+  width: 300px;
+  height: 225px;
+  background: #000;
+  float: left;
+  margin-bottom: 15px;
+  margin-right: 8px;
+  margin-left: 8px;
 }
 
 .fa-user::before, .fa-archive::before, .fa-envelope-open::before {
@@ -293,3 +306,15 @@ header {
   }
 }
 /* LOADER END*/
+
+@media only screen and (max-width: 1027px) {
+  .portfolio-items {
+    width: 632px;
+  } 
+}
+
+@media only screen and (max-width: 711px) {
+  .portfolio-items {
+    width: 301px;
+  } 
+}

@@ -1,4 +1,4 @@
-var mouseX = 0, mouseY = 0,
+var mouseX = 0, mouseY = 0, bgrun = true,
 
 			windowHalfX = window.innerWidth / 2,
 			windowHalfY = window.innerHeight / 2,
@@ -167,11 +167,11 @@ var mouseX = 0, mouseY = 0,
 			//
 
 			function animate() {
-
+				if(bgrun) {
 				requestAnimationFrame( animate );
 
 				render();
-
+				}
 			}
 
 			function render() {

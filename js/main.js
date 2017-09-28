@@ -3,7 +3,6 @@
 setTimeout(
   function() {
     $(document).ready(function() {
-    
     $('.loader-wrap').addClass('hide');
     $('.loader').addClass('remove');
   });
@@ -38,6 +37,7 @@ $('#close').click(function(){
 });
 
 function expand(x) {
+  bgrun = false;
   var buttonLink = x.slice(0, x.length-8);
   var ht = window.innerHeight;
   $('#name').html(buttonLink.toUpperCase());
@@ -45,12 +45,12 @@ function expand(x) {
   setTimeout(function(){
       $('#'+x).addClass('expand').animate({
             height: ht
-      }, 500);
+      }, 300);
       $('header').addClass('fixed').animate({
         top: "0px"
-      },500);
+      },300);
       $('nav').addClass('remove');
-    },200);
+    },10);
   
 
   $('.content').addClass('offset');
@@ -60,6 +60,8 @@ function expand(x) {
 }
 
 function close() {
+  bgrun = true;
+  animate();
   $('#close').removeClass('expand');
   $('#name').html("Jeffrey Nerona");
   $('#titles').html("Web Developer | Physics Geek | Cyborg");
