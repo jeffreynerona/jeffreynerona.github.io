@@ -71,12 +71,6 @@ a:-webkit-any-link {
 }
 
 .site-wrap {
-  /*
-  background: url("../images/bg2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  */
   height: 100%;
   width: 100%;
   max-width: 100%;
@@ -86,6 +80,7 @@ a:-webkit-any-link {
   z-index: 1;
   overflow: hidden;
 }
+
 #home {
   background: rgba(0,0,0,0.5);
   height: 100%;
@@ -152,7 +147,7 @@ header {
 
 #close {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   padding: 12px;
