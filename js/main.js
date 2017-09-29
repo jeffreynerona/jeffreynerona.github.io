@@ -1,4 +1,3 @@
-
 /*Loader*/
 setTimeout(
   function() {
@@ -56,7 +55,7 @@ function expand(x) {
   $('.content').addClass('offset');
   setTimeout(function(){
       $('#close').addClass('expand');
-    },700);
+    },300);
 }
 
 function close() {
@@ -64,7 +63,7 @@ function close() {
   animate();
   $('#close').removeClass('expand');
   $('#name').html("Jeffrey Nerona");
-  $('#titles').html("Web Developer | Physics Geek | Cyborg");
+  $('#titles').html("Full Stack Developer");
   $('.content').removeClass('offset').animate({
             height: 0
   }, 500);
@@ -77,18 +76,3 @@ function close() {
     top: 'auto'
   },500);
 }
-/*    
-    $('#contact').removeClass('bluize');
-    $('#profile').removeClass('bluize');
-    $('#portfolio').removeClass('bluize');
-    $("#"+active).animate({
-              height: 0,
-          }, 500).delay(500);
-    setTimeout(function(){
-      $("#"+x).removeClass('expand');
-    },500);
-    active='none';
-    $('header').removeClass('fixed');
-
-    $('.content').removeClass('offset');
-*/
