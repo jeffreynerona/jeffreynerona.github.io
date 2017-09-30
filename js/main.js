@@ -13,7 +13,7 @@ cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
   $('#name').addClass('enlarge');
   setTimeout(
     function() {
-      $('#name').html('Jefrey Nerona');
+      $('#name').html('FULL STACK DEVELOPER');
       $('#name').removeClass('enlarge');
   }, 1000);
 });
@@ -40,7 +40,7 @@ function expand(x) {
   var buttonLink = x.slice(0, x.length-8);
   var ht = window.innerHeight;
   $('#name').html(buttonLink.toUpperCase());
-  $('#titles').html('Jeffrey Nerona')
+  $('#titles').html('Jeffrey Nerona');
   setTimeout(function(){
       $('#'+x).addClass('expand').animate({
             height: ht
@@ -51,7 +51,8 @@ function expand(x) {
       $('nav').addClass('remove');
     },10);
   
-
+        $('#name').addClass('namefont');
+      $('#titles').addClass('titlefont');
   $('.content').addClass('offset');
   setTimeout(function(){
       $('#close').addClass('expand');
@@ -59,11 +60,11 @@ function expand(x) {
 }
 
 function close() {
-  bgrun = true;
-  animate();
   $('#close').removeClass('expand');
-  $('#name').html("Jeffrey Nerona");
-  $('#titles').html("Full Stack Developer");
+  $('#name').html("FULL STACK DEVELOPER");
+  $('#titles').html("Jeffrey Nerona");
+  $('#name').removeClass('namefont')
+  $('#titles').removeClass('titlefont')
   $('.content').removeClass('offset').animate({
             height: 0
   }, 500);
