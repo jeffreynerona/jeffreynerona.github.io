@@ -162,7 +162,8 @@ a:-webkit-any-link {
 .portfolio-item {
   width: 300px;
   height: 225px;
-  background: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
   float: left;
   margin: 0px 8px 15px 8px;
   position: relative;
@@ -174,7 +175,7 @@ a:-webkit-any-link {
   height: 60px;
   width: 100%;
   bottom: 0;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.6);
   -webkit-transition: height 800ms;
   -moz-transition: height 800ms;
   -ms-transition: height 800ms;
@@ -198,6 +199,7 @@ a:-webkit-any-link {
 
 .portfolio-item:hover .portfolio-details{
   height: 225px;
+  background: rgba(255,255,255,0.9);
 }
 
 .fa-user::before, .fa-archive::before, .fa-envelope-open::before {
