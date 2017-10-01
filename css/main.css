@@ -228,6 +228,75 @@ a:-webkit-any-link {
   color: #FF0 !important;
 }
 
+.portfolio-description {
+    padding: 20px;
+    display: block;
+    line-height: 20px;
+    font-size: 18px;
+}
+
+.github-button {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 6px 16px;
+    font-size: 20px;
+}
+
+.blinking-cursor {
+  font-weight: 100;
+  color: #FFF;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFF;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFF;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFF;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFF;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFF;
+  }
+}
+
 @media only screen and (max-width: 1027px) {
   .portfolio-items {
     width: 632px;

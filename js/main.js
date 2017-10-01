@@ -7,20 +7,22 @@ setTimeout(
   });
 }, 1500);
 
+var title = 'FULL <span class="dev">$</span>TACK <span class="dev">DEV</span>ELOPER<span class="blinking-cursor">|</span>';
+
 /*Konami code*/
 cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
   $('#name').html('Send Nudes');
   $('#name').addClass('enlarge');
   setTimeout(
     function() {
-      $('#name').html('FULL <span class="dev">$</span>TACK <span class="dev">DEV</span>ELOPER');
+      $('#name').html(title);
       $('#name').removeClass('enlarge');
   }, 1000);
 });
 
 /*Site Navigation*/
-$('#profile').click(function(){
-  expand('profile-section');
+$('#about').click(function(){
+  expand('about-section');
   return false; 
 });
 $('#portfolio').click(function(){
@@ -62,7 +64,7 @@ function expand(x) {
 
 function close() {
   $('#close').removeClass('expand');
-  $('#name').html('FULL <span class="dev">$</span>TACK <span class="dev">DEV</span>ELOPER');
+  $('#name').html(title);
   $('#titles').html('Jeffrey Nerona');
   $('#name').removeClass('namefont')
   $('#titles').removeClass('titlefont')
