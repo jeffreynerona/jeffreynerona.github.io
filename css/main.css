@@ -4,6 +4,16 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
+p,h1,h2,h3 {
+  display: block;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 1.3em;
+  line-height: 1.4em;
+}
+
 .menu-item {
   width: 56px;
   display: inline-block;
@@ -12,14 +22,13 @@ a:-webkit-any-link {
 
 .icon-text {
   display: block;
-  text-align: center;
   color: #fff;
   font-size: 16px;
 }
 
 .container {
   padding: 40px;
-  max-width: 100%;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -186,14 +195,12 @@ a:-webkit-any-link {
 .portfolio-title {
   display: block;
   padding: 6px 0;
-  text-align: center;
   font-size: 2em;
 }
 
 .portfolio-tags {
   display: block;
   padding: 0px 0 6px 0;
-  text-align: center;
   font-size: 1em;
 }
 
@@ -217,7 +224,7 @@ a:-webkit-any-link {
 }
 
 .profile-image {
-  display: block;
+  display: inline-block;
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -250,6 +257,15 @@ a:-webkit-any-link {
   -ms-animation: 1s blink step-end infinite;
   -o-animation: 1s blink step-end infinite;
   animation: 1s blink step-end infinite;
+}
+
+span.profile-tag {
+    display: inline-block;
+    background: royalblue;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 17px;
 }
 
 @keyframes "blink" {
@@ -309,5 +325,14 @@ a:-webkit-any-link {
   } 
   #name {
     font-size: 3em !important;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .left-tags .profile-tag {
+    width: 180px;
+  }
+  .right-tags .profile-tag {
+    width: 240px;
   }
 }

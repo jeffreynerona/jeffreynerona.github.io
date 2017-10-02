@@ -43,7 +43,6 @@ function expand(x) {
   var buttonLink = x.slice(0, x.length-8);
   var ht = window.innerHeight;
   $('#name').html(buttonLink.toUpperCase());
-  $('#titles').html('Jeffrey Nerona');
   setTimeout(function(){
       $('#'+x).addClass('expand').animate({
             height: ht
@@ -65,7 +64,6 @@ function expand(x) {
 function close() {
   $('#close').removeClass('expand');
   $('#name').html(title);
-  $('#titles').html('Jeffrey Nerona');
   $('#name').removeClass('namefont')
   $('#titles').removeClass('titlefont')
   $('.content').removeClass('offset').animate({
