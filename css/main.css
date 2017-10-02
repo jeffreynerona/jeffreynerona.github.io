@@ -27,7 +27,7 @@ p {
 }
 
 .container {
-  padding: 40px;
+  padding: 30px;
   max-width: 1028px;
   margin: auto;
 }
@@ -136,20 +136,25 @@ p {
   float: left;
   margin: 0px 8px 15px 8px;
   position: relative;
+  color: #fff;
 }
 
 .portfolio-details {
   display: block;
   position: absolute;
-  height: 60px;
+  height: 225px;
+  background: rgba(65,105,255,0.8);
   width: 100%;
   bottom: 0;
-  background: rgba(255,255,255,0.6);
-  -webkit-transition: height 500ms;
-  -moz-transition: height 500ms;
-  -ms-transition: height 500ms;
-  -o-transition: height 5800ms;
-  transition: height 500ms;
+  padding: 14px;
+}
+
+.portfolio-item:hover .portfolio-title {
+  color: #FF0;
+}
+
+.portfolio-item:hover .portfolio-details {
+  background: royalblue;
 }
 
 .portfolio-title {
@@ -164,11 +169,6 @@ p {
   font-size: 1em;
 }
 
-.portfolio-item:hover .portfolio-details{
-  height: 225px;
-  background: rgba(255,255,255,0.9);
-}
-
 .fa-user::before, .fa-archive::before, .fa-envelope-open::before {
   color: #fff;
 }
@@ -181,6 +181,7 @@ p {
 
 .titlefont {
   font-size: 1.5em !important;
+  line-height: 1em;
 }
 
 .profile-image {
@@ -203,10 +204,16 @@ p {
 }
 
 .github-button {
-    border: 1px solid #000;
+    border: 1px solid #fff;
     border-radius: 10px;
     padding: 6px 16px;
     font-size: 20px;
+    color: #fff !important;
+}
+
+.github-button:hover {
+  background: #fff;
+  color: royalblue!important;
 }
 
 .blinking-cursor {
