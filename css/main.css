@@ -211,6 +211,10 @@ p {
     color: #fff !important;
 }
 
+.demo-button {
+  margin-left: 5px;
+}
+
 .github-button:hover {
   background: #fff;
   color: royalblue!important;
