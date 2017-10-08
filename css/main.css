@@ -1,6 +1,6 @@
-a:-webkit-any-link {
-    color: #000;
-    cursor: auto;
+a: {
+    color: royalblue;
+    cursor: pointer;
     text-decoration: none;
 }
 
