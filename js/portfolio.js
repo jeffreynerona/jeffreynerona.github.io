@@ -43,7 +43,7 @@
 	  "title" : "Basic React Tutorial",
 	  "description" : "A tutorial on starting a react app, creating components, functions, events etc.",
 	  "image" : "images/portfolio/basic-react-tutorial.jpg",
-	  "github" : "https://github.com/jeffreynerona/photoboard"
+	  "github" : "https://github.com/jeffreynerona/basic-react-tutorial"
 	}
 	];
 
