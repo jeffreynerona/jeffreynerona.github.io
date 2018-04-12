@@ -130,6 +130,7 @@ p {
 
 .portfolio-item {
   width: 300px;
+  max-width: 100%;
   height: 225px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -169,7 +170,7 @@ p {
   font-size: 1em;
 }
 
-.fa-user::before, .fa-archive::before, .fa-envelope-open::before {
+.fa-user::before, .fa-archive::before, .fa-file::before, .fa-envelope-open::before {
   color: #fff;
 }
 

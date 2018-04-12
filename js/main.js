@@ -7,7 +7,7 @@ setTimeout(
   });
 }, 1500);
 
-var title = 'FULL <span class="dev">$</span>TACK <span class="dev">DEV</span>ELOPER<span class="blinking-cursor">|</span>';
+let title = 'FULL <span class="dev">$</span>TACK <span class="dev">DEV</span>ELOPER<span class="blinking-cursor">|</span>';
 
 /*Konami code*/
 cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
