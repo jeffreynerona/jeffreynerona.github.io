@@ -25,10 +25,10 @@ $('#about').click(function(){
   expand('about-section');
   return false; 
 });
-$('#portfolio').click(function(){
-  expand('portfolio-section');
-  return false;
-});
+// $('#portfolio').click(function(){
+//   expand('portfolio-section');
+//   return false;
+// });
 $('#contact').click(function(){
   expand('contact-section');
   return false;
